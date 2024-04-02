@@ -5,12 +5,12 @@
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
 pkgname=termius-deb
 _pkgname=Termius
-pkgver=8.9.9
+pkgver=8.10.4
 pkgrel=1
 pkgdesc='Desktop SSH Client (deb release)'
 arch=('x86_64')
 url='https://termius.com'
-license=('custom:proprietary')
+license=('LicenseRef-Termius')
 makedepends=('links')
 provides=("${pkgname//-deb}")
 conflicts=("${pkgname//-deb}" "${pkgname//-deb/'-beta'}")

@@ -1,10 +1,10 @@
 pkgbase = termius-deb
 	pkgdesc = Desktop SSH Client (deb release)
-	pkgver = 8.9.9
+	pkgver = 8.10.4
 	pkgrel = 1
 	url = https://termius.com
 	arch = x86_64
-	license = custom:proprietary
+	license = LicenseRef-Termius
 	makedepends = links
 	provides = termius
 	conflicts = termius
