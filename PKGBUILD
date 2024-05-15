@@ -5,7 +5,7 @@
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
 pkgname=termius-deb
 _pkgname=Termius
-pkgver=8.10.4
+pkgver=8.12.2
 pkgrel=1
 pkgdesc='Desktop SSH Client (deb release)'
 arch=('x86_64')
@@ -80,7 +80,6 @@ package() {
     cp -a "${pkgname//-deb}-rolling/opt/$_pkgname/." "$pkgdir/opt/${pkgname//-deb}/"
 
     chmod 755 "$pkgdir/opt/${pkgname//-deb}/${pkgname//-deb}"
-    chmod u+s "$pkgdir/opt/${pkgname//-deb}/chrome-sandbox" || true
 
     install -d "$pkgdir/usr/bin/"
     ln -s "/opt/${pkgname//-deb}/${pkgname//-deb}" "$pkgdir/usr/bin/${pkgname//-deb}"
